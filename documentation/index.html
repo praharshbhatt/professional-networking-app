@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+	<title>Job search and networking App UI kit V1.0 - Helper documentation</title>
+ 	<meta name="description" content="Job search professional networking social media UI KIT app in Flutter">
+	<meta name="author" content="Praharsh Bhatt">
+	<meta name="copyright" content="Praharsh Bhatt">
+	<meta name="generator" content="Documenter v2.0 https://evp.to/documenter">
+	<meta name="date" content="2020-12-22T00:00:00+01:00">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+
+	<style>
+		html, body{background-color:#FFFFFF;color:#383838;}
+		h1,h2,h3,h4,h5,h6{color:#383838;}
+		section table{background-color:#FFFFFF;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a.brand{background-image:url(assets/images/image_15.png);}
+		a, a:hover, a:active{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		div.navbar-inner, .navbar .nav li ul{background:#DDDDDD;color:#222222;http://static.revaxarts-themes.com/noise.gif}
+		a.btn-navbar{background:#DDDDDD;color:#222222;}
+		.navbar .nav li a{color:#222222;text-shadow:1px 1px 0px #EEEEEE;}
+		.navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+		div.navbar-inner ul{}
+		.marketing-byline{color:#FFFFFF;}
+		.navbar .nav > li a{color:#444444;}
+		.navbar .nav > li a:hover, a.btn-navbar:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:hover{background:#444444;color:#DDDDDD;}
+		.navbar .nav li ul li a:active{background:#444444;color:#DDDDDD;}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  background-color: #0044CC;
+		}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+	<link rel="stylesheet" src="http://revaxarts-themes.com/documenter/_css/custom.css" media="screen">
+
+	<script src="assets/js/cufon.js"></script><script src="http://revaxarts-themes.com/_js/font.js"></script><script>Cufon.replace("h1, h2, h3, h4, h5, h6");</script>
+    </head>
+
+<body class="documenter-project-job-search-and-networking-app-ui-kit-v10" data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+			<a class="brand" href="#">Job search and networking App UI kit V1.0 - Helper documentation</a>
+			<div class="nav-collapse">
+			<ul class="nav">
+					
+			<li><a href="#what_is_this" title="What is this?">What is this?</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#how_much_does_it_cost" title="How much does it cost?">How much does it cost?</a></li>
+			<li><a href="#how_does_it_work" title="How does it work?">How does it work?</a></li>
+			<li><a href="#how_can_i_save_my_docs" title="How can I save my docs?">How can I save my docs?</a></li>
+			<li><a href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+			<li><a href="#customisation" title="Customisation">Customisation</a></li>
+			<li><a href="#syntaxhighlighter" title="SyntaxHighlighter">SyntaxHighlighter</a></li>
+			<li><a href="#custom_classes" title="Custom Classes">Custom Classes</a></li>
+			<li><a href="#inline_linking_deeplinks" title="Inline Linking & Deeplinks">Inline Linking & Deeplinks</a></li>
+			<li><a href="#autosave" title="Autosave">Autosave</a></li>
+			<li><a href="#json_import_export" title="JSON Import/Export">JSON Import/Export</a></li>
+			<li><a href="#save_your_docs" title="Save your Docs">Save your Docs</a></li>
+			<li><a href="#advanced_options" title="Advanced Options">Advanced Options</a></li>
+			<li><a href="#changelog" title="Changelog">Changelog</a></li>
+			<li><a href="#source_credits" title="Source & Credits">Source & Credits</a></li>
+			<li><a href="#supporters" title="Supporters">Supporters</a></li>
+			<li><a href="#what_else" title="What else">What else</a></li>
+
+			</ul>
+			</div>
+		</div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->
+
+<div class="container" id="documenter_content">
+
+	<div id="documenter-cover">
+	<div class="masthead">
+	    <h1>Job search and networking App UI kit V1.0 - Helper documentation</h1>
+	    <p>Job search professional networking social media UI KIT app in Flutter</p>
+	    <ul class="marketing-byline">
+			<li>created: 22/12/2020</li>
+			<li>latest update: 12/22/2020</li>
+			<li>by: Praharsh Bhatt</li>
+			<li><a href=""></a></li>
+		</ul>
+	    <p class="download-info">
+			<a href="https://github.com/praharshbhatt/professional-networking-app/raw/master/professional-networking-app.apk" class="btn btn-primary btn-large">Try the App</a> 
+		</p>
+
+	</div> <!-- masthead -->
+
+   <div id="intro">
+    <p class="highlight hero-unit">Flutter is an open-source mobile application development SDK created by Google. It is used to develop applications for Android and iOS, as well as being the primary method of creating applications for Google Fuchsia, Flutter widgets incorporate all critical platform differences such as scrolling, navigation, icons, and fonts to provide full native performance on both iOS and Android.
+
+This is a Linkedin like professional networking app, whose primary feature is to connect job seekers with recruiters.
+
+
+<strong>Template Features:</strong>
+
+– Clean code comments in all code
+– Buy 1 template get 5 templates
+– Clean Design
+– High-quality material design
+– Responsive Design to any all device screen
+– Easy to Custom layout
+
+
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/1.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/2.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/3.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/4.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/5.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/6.png?raw=true" width="600"/>
+<img src="https://github.com/praharshbhatt/professional-networking-app/blob/master/7.png?raw=true" width="600"/>
+
+<a href="https://github.com/praharshbhatt/professional-networking-app/raw/master/professional-networking-app.apk">Try the APK</a></p>
+   </div> <!-- intro -->
+
+	</div>
+
+  <section id="what_is_this">
+	<div class="page-header"><h3>What is this?</h3><hr class="notop"></div>
+<h3>
+	Flutter app Documentation</h3>
+<h4 id="what_is_this_introduction">Introduction</h4>
+<div>
+	Since this app is developed in Flutter, you will need to have Flutter installed on your system.</div>
+<div>
+	The installation itself is very straightforward: https://flutter.dev/docs/get-started/install.</div>
+<div>
+	&nbsp;</div>
+<h4 id="what_is_this_compiling_and_running_the_app">Compiling and running the app</h4>
+<ol>
+	<li>
+		Firstly, switch your flutter channel to master, as compiling for web will need you to be in beta channel. You can do this by typing &ldquo;flutter channel beta&rdquo; and then &ldquo;flutter upgrade&rdquo;.</li>
+	<li>
+		Then run &ldquo;flutter config --enable-web&rdquo; to enable web support.</li>
+	<li>
+		Open the code folder in your IDE of choice</li>
+	<li>
+		Make sure that the Flutter SDK and DART SDK path are set, and Flutter and DART plugins are installed.</li>
+	<li>
+		Type &ldquo;flutter create .&rdquo; into the terminal of your IDE to generate the Android iOS and web folders</li>
+	<li>
+		Type &ldquo;flutter run&rdquo; to run the app.</li>
+	<li>
+		For the web, run &ldquo;flutter run -d chrome --web-port=8080 --web-hostname=127.0.0.1&rdquo;.</li>
+</ol>
+<div>
+	&nbsp;</div>
+</section>
+<section id="features">
+	<div class="page-header"><h3>Features</h3><hr class="notop"></div>
+<ul>	<li>		Custom Colors</li>
+	<li>		Custom CSS</li>
+	<li>		Cufon Font Support</li>
+	<li>		zip File Creation</li>
+	<li>		Syntaxhighlighter</li>
+	<li>		JSON Import/Export</li>
+	<li>		Themes</li>
+</ul>
+</section>
+<section id="how_much_does_it_cost">
+	<div class="page-header"><h3>How much does it cost?</h3><hr class="notop"></div>
+<p>	Nothing!</p>
+<p>	Yeah that&#39;s right! I offer this service for free!</p>
+<p>	If you have to much money you can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=paypal%40revaxarts%2ecom&amp;lc=US&amp;item_name=The%20Documenter%20by%20revaxarts&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest">donate</a> for sure<img alt="wink" height="20" src="http://revaxarts-themes.com/documenter/_js/ckeditor/plugins/smiley/images/wink_smile.gif"></p>
+</section>
+<section id="how_does_it_work">
+	<div class="page-header"><h3>How does it work?</h3><hr class="notop"></div>
+<p>	It&#39;s really simple.</p>
+<p>	<img alt="" src="http://i.imgur.com/iq0iT.jpg" style="width: 690px; height: 62px"></p>
+<ul>	<li>		The whole documentation is divided into sections.</li>
+	<li>		Each section has a title(for this section it&#39;s &quot;How does it work?&quot;) and an ID (which is &quot;#how_does_it_work&quot;)</li>
+	<li>		You can make as many sections as you like with the &quot;add Section&quot; Button. You must provide an unique title for each section.</li>
+	<li>		You can rearrange sections by drag &#39;n drop the buttons on the right.</li>
+	<li>		After you setup your documentation you can download a zip file which contains an &quot;index.html&quot; some JavaScript files and all images which you included.</li>
+	<li>		Your generated documentation will stay for about an hour so please be sure to download it (or generate it again)</li>
+</ul>
+<p>	&nbsp;</p>
+</section>
+<section id="how_can_i_save_my_docs">
+	<div class="page-header"><h3>How can I save my docs?</h3><hr class="notop"></div>
+<p>	There are two ways to save your work:</p>
+<ul>	<li>		locally on your harddrive (<a href="#json_import_export">JSON Import/Export</a>)</li>
+	<li>		<strike>With the third-party-service pasteBin (beta)</strike></li>
+	<li>		Save it on your server with the <a href="#advanced_options">Advance Options</a></li>
+</ul>
+</section>
+<section id="html_structure">
+	<div class="page-header"><h3>HTML Structure</h3><hr class="notop"></div>
+<p>	Here is the HTML Structure of the Documentation (simplified):</p>
+<pre class="prettyprint lang-html linenums">
+&lt;body&gt;
+&nbsp;&nbsp; &nbsp;&lt;div id=&quot;documenter_sidebar&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;a href=&quot;#documenter_cover&quot; id=&quot;documenter_logo&quot;&gt;&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;ul id=&quot;documenter_nav&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#{section_id}&quot;&gt;{Section Name}&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#{section_id}&quot;&gt;{Section Name}&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href=&quot;#{section_id}&quot;&gt;{Section Name}&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     &lt;ul&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;         &lt;li&gt;&lt;a href=&quot;#{section_id}_{subcat_id}&quot;&gt;{SubCat Name}&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;         &lt;li&gt;&lt;a href=&quot;#{section_id}_{subcat_id}&quot;&gt;{SubCat Name}&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;         &lt;li&gt;&lt;a href=&quot;#{section_id}_{subcat_id}&quot;&gt;{SubCat Name}&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;     &lt;/ul&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/li&gt;
+            ...
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;div id=&quot;documenter_copyright&quot;&gt;Copyright {Your Name} {Current Year}&lt;br&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; made with the &lt;a href=&quot;http://rxa.li/documenter&quot;&gt;Documenter v{Version}&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&lt;div id=&quot;documenter_content&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;section id=&quot;{section_id}&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;h3&gt;{Section Name}&lt;/h3&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {content}
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;section id=&quot;{section_id}&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;h3&gt;{Section Name}&lt;/h3&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {content}
+            &lt;h4 id=&quot;{section_id}_{submenu_id}&quot;&gt;{SubCat Name}&lt;/h4&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {content}
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;/section&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ...
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&lt;/body&gt;
+</pre>
+<h4 id="html_structure_submenus">Submenus</h4>
+<p>	You can use submenus within the navigation.</p>
+<p>	Activeate the checkbox and use H4 headlines as the name</p>
+<p>	<img alt="" src="http://i.imgur.com/RuwVp.png" style="width: 248px; height: 80px"></p>
+<p>	The H4 will get an id:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;h4 id=&quot;section_name_subcategory_name&quot;&gt;Subcategory Name&lt;/h4&gt;
+</pre>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="customisation">
+	<div class="page-header"><h3>Customisation</h3><hr class="notop"></div>
+<p>	The Documenter offers a smart way to brand your Documentation</p>
+<h4 id="customisation_logo">Logo</h4>
+<p>	<img alt="" src="http://i.imgur.com/CnQPW.png"></p>
+<p>	Include a URL to your Logo. I recommend png with transparent background and smaller then 200x200 pixels.</p>
+<h4 id="customisation_custom_css">Custom CSS</h4>
+<p>	<img alt="" src="http://i.imgur.com/BpRQX.png"></p>
+<p>	If you would like to include a custom CSS to change the appearance of your documentation enter a URL to your CSS file. Check out the <a href="#html_structure">HTML Structure</a> and the <a href="#custom_classes">Custom Classes</a> as well!</p>
+<h4 id="customisation_colors">Colors</h4>
+<p>	<img alt="" src="http://i.imgur.com/fcupK.jpg" style="width: 484px; height: 367px"></p>
+<p>	With the color options you can style your documentation so it fits your visual needs.<br>
+	Start with a Theme or define each color separately. You can specify a background image too.</p>
+<p>	The box on the right gives you a minimalistic preview</p>
+<h4 id="customisation_scrolling">Scrolling</h4>
+<p>	<img alt="" src="http://i.imgur.com/tyNZr.jpg" style="width: 439px; height: 128px"></p>
+<p>	Define a custom scrolling function. The duration defines how long the scrolling will happen.</p>
+<p class="warning">
+	I recommend not to abuse this part. Buyers maybe get confused with some bouncing pages</p>
+<h4 id="customisation_cufon_font">Cufon Font</h4>
+<p>	<img alt="" src="http://i.imgur.com/r2Iht.png"></p>
+<p>	Cufon provides a simple way to include your custom font across all modern browsers. This technology is based on JavaScript and work with nearly every font you can imagine.</p>
+<h5>
+	How to include a custom font:</h5>
+<ul>	<li>		go to the <a href="http://cufon.shoqolate.com/generate/">cufon website</a></li>
+	<li>		Fill out the form</li>
+	<li>		You get a Javascript file which you have to upload somewhere</li>
+	<li>		Paste the link into the field</li>
+</ul>
+<h4 id="customisation_styles">Styles</h4>
+<p>	I prepared some Styles:</p>
+<p class="warning">
+	This is a warning</p>
+<p class="info">
+	This is a info</p>
+<pre class="prettyprint lang-plain linenums">
+This is just plain text
+</pre>
+<pre class="prettyprint lang-js linenums">
+function javascript(){
+	alert(&#39;this is a javascript function&#39;);
+}
+</pre>
+<pre class="prettyprint lang-css linenums">
+#cssblock{
+	width:999px;
+}
+</pre>
+<pre class="prettyprint lang-php linenums">
+&lt;?php
+	echo &#39;Hello PHP&#39;;
+?&gt;
+</pre>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;html&quot;&gt;
+	I am HTML!
+&lt;/div&gt;
+</pre>
+</section>
+<section id="syntaxhighlighter">
+	<div class="page-header"><h3>SyntaxHighlighter</h3><hr class="notop"></div>
+<p>	<strike>I&#39;m using the <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a> by Alex Gorbatchev which is awesome!</strike></p>
+<p>	Since version 2.0 <a href="https://code.google.com/p/google-code-prettify/">Google Code Prettify</a></p>
+<p>	<img alt="" src="http://i.imgur.com/IZwYQ.png"></p>
+<p>	Currently the Documenter can handle following syntax&#39;s:</p>
+<ul>	<li>		Plain Text</li>
+	<li>		PHP</li>
+	<li>		JavaScript</li>
+	<li>		HTML/XHTML</li>
+	<li>		CSS</li>
+</ul>
+<p>	I don&#39;t think we need more</p>
+</section>
+<section id="custom_classes">
+	<div class="page-header"><h3>Custom Classes</h3><hr class="notop"></div>
+<p>	For more customisation I included custom classes</p>
+<p>	A custom class converts</p>
+<pre class="prettyprint lang-html linenums">
+&lt;p&gt;
+contents
+&lt;/p&gt;
+</pre>
+<p>	into</p>
+<pre class="prettyprint lang-html linenums">
+&lt;p class=&quot;c_{number}&quot;&gt;
+contents
+&lt;/p&gt;
+</pre>
+<p class="info">
+	{number} is a placeholder for a number from 1 to 9</p>
+<p>	You can style this paragraph within a <a href="#customisation">custom CSS file</a></p>
+<p>	Here five examples of custom classes:</p>
+<hr>
+<p class="c_1">
+	Custom Style 1</p>
+<p class="c_2">
+	Custom Style 2</p>
+<p class="c_3">
+	Custom Style 3</p>
+<p class="c_4">
+	Custom Style 4</p>
+<p class="c_5">
+	Custom Style 5</p>
+<hr>
+<p class="info">
+	You can access custom classes in the very left drop down of the toolbar</p>
+</section>
+<section id="inline_linking_deeplinks">
+	<div class="page-header"><h3>Inline Linking & Deeplinks</h3><hr class="notop"></div>
+<h4 id="inline_linking_deeplinks_inline_linking">Inline Linking</h4>
+<p>	You can use &lt;a&gt; tag to jump from on section to another:</p>
+<p>	Just name the href of the a with the id of the section:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;a href=&quot;#features&quot;&gt;Go to Features&lt;/a&gt;
+</pre>
+<p>	<a href="#features">Go to Features</a></p>
+<h4 id="inline_linking_deeplinks_deeplink">Deeplink</h4>
+<p>	If you like to refer to a specific section of your documentation you can simple ad the hastag at the end of the url:</p>
+<p>	<a href="http://revaxarts-themes.com/leaf/docs/">http://revaxarts-themes.com/leaf/docs/</a></p>
+<p>	comes</p>
+<p>	<a href="http://revaxarts-themes.com/leaf/docs/#the_template_builder">http://revaxarts-themes.com/leaf/docs/#the_template_builder</a></p>
+<p>	the hash is the id of the section</p>
+</section>
+<section id="autosave">
+	<div class="page-header"><h3>Autosave</h3><hr class="notop"></div>
+<p>	You can automatically save your work and restore it later if your browser crashes.</p>
+<p>	<img alt="" src="http://i.imgur.com/vFnlZ.jpg" style="width: 236px; height: 66px"></p>
+<ul>	<li>		activate autosaving with the button</li>
+	<li>		the Documenter will save your work every 30 seconds</li>
+	<li>		load last saved version via the left button.</li>
+	<li>		If your browser crashes or you reload the page you can restore the latest state of your doc</li>
+</ul>
+<p class="warning">
+	Your saved doc will stay available one week after creation</p>
+</section>
+<section id="json_import_export">
+	<div class="page-header"><h3>JSON Import/Export</h3><hr class="notop"></div>
+<h4 id="json_import_export_export">Export</h4>
+<p>	When you have finished your documentation you can save your work wherever you like.</p>
+<p>	<img alt="" src="http://i.imgur.com/6v4u3.jpg" style="width: 644px; height: 124px"></p>
+<p>	Just copy all the contents of the box at the very bottom.</p>
+<h4 id="json_import_export_import">Import</h4>
+<p>	You can import that string by pasting it into the import field or enter the URL to the JSON file</p>
+<p>	<img alt="" src="http://i.imgur.com/2yYFh.jpg" style="width: 649px; height: 189px"></p>
+<p>	Click outside the box and the Documenter will generate your documentation.</p>
+<p>	&nbsp;</p>
+</section>
+<section id="save_your_docs">
+	<div class="page-header"><h3>Save your Docs</h3><hr class="notop"></div>
+<p>	You can save your documentations. You need a webserver which can handle php files.</p>
+<h4 id="save_your_docs_how_it_works">How it works</h4>
+<p>	Enter the URL of your script which handles the <a href="#advanced_options">Advanced Options</a></p>
+<p>	<img alt="" src="http://i.imgur.com/qgS4n.jpg"></p>
+<p>	You script must return the URL of the saves JSON file</p>
+<p class="small">
+	You can find an example script <a href="http://pastebin.com/7FXBe3MC">here</a></p>
+<p class="small">
+	After you have built your documentation you can find a button at the &quot;custom docs&quot; section</p>
+<p class="small">
+	<img alt="" src="http://i.imgur.com/JAjB0.jpg"  ></p>
+<p class="small">
+	&nbsp;</p>
+</section>
+<section id="advanced_options">
+	<div class="page-header"><h3>Advanced Options</h3><hr class="notop"></div>
+<p>	The Advance Options gives you a possiblity to send the documentation to your server. Furthermore it&#39;s used to save documentation.</p>
+<p>	<img alt="" src="http://i.imgur.com/bgVY9.jpg" style="width: 481px; height: 238px"></p>
+<p>	You can enter URL to a script located on your server which recives the JSON or the zip file.</p>
+<p>	You can enter a password in the third field which will get included so you can check it on your server.</p>
+<p>	If you set a URL for the JSON these variables will get sent to the server:</p>
+<pre class="prettyprint lang-php linenums">
+$_POST = array(
+   &#39;json&#39; =&gt; THE_JSON_OF_YOUR_DOC
+   &#39;pwd&#39; =&gt; MD5_HASH_OF_YOUR_PASSWORD
+)
+</pre>
+<p>	If you set a URL for the ZIP file these variables will get sent to the server:</p>
+<pre class="prettyprint lang-php linenums">
+$_POST = array(
+ &#39;name&#39; =&gt; &#39;documentation.zip&#39;,
+ &#39;pwd&#39; =&gt; MD5_HASH_OF_YOUR_PASSWORD 
+)
+$_FILES = array(
+   &#39;file&#39; =&gt; array(
+      &#39;name&#39; =&gt; &#39;documentation.zip&#39;,
+      &#39;type&#39; =&gt; &#39;application/octet-stream&#39;,
+      &#39;tmp_name&#39; =&gt; TEMP_FILE_NAME,
+      &#39;error&#39; =&gt; 0,
+      &#39;size&#39; =&gt; FILESIZE
+  )
+)
+&lt;/pre&gt;</pre>
+<p>	You can start with <a href="http://pastebin.com/7FXBe3MC">this script</a> and modify it for your needs</p>
+</section>
+<section id="changelog">
+	<div class="page-header"><h3>Changelog</h3><hr class="notop"></div>
+<h4 id="changelog_version_20_20_06_2012_">Version 2.0 (20/06/2012)</h4>
+<pre class="prettyprint lang-plain linenums">
+New Twitter Bootstrap
+</pre>
+<h4 id="changelog_version_16_12_10_2011_">Version 1.6 (12/10/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+Added Favicon support
+better iOS 5 support
+</pre>
+<h4 id="changelog_version_15_09_12_2011_">Version 1.5 (09/12/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+Added Save functionality
+Drop Pastebin integration
+New Look!
+Bug fixes
+</pre>
+<h4 id="changelog_version_14_06_25_2011_">Version 1.4 (06/25/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+Submenu Support
+Bug fixes
+</pre>
+<h4 id="changelog_version_13_03_28_2011_">Version 1.3 (03/28/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+Autosave feature
+Custom CSS file
+Custom Classes
+Background Image Support
+Browser Back Button Support
+Validation for URLs and E-Mails
+Removed the wrapper in the HTML Structure (use the body instead)
+Some optical improvements
+Some technical improvements
+Bug fixes
+</pre>
+<h4 id="changelog_version_12_03_17_2011_">Version 1.2 (03/17/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+support for iPhone, iPod Touch, iPad
+deeplinking support
+Navigation gets a scrollbar if it gets out of view
+External links are no opening in a new window
+No more empty fields in the documentation
+New Field: Website
+4 new Themes
+Bug fixes</pre>
+<h4 id="changelog_version_11_03_12_2011_">Version 1.1 (03/12/2011)</h4>
+<pre class="prettyprint lang-plain linenums">
+Themeselecter
+Easy Easing
+&ldquo;today&rdquo; checkbox for last Update
+E-mail addresses are now encoded (simple spam protection)
+Bug fixes</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="source_credits">
+	<div class="page-header"><h3>Source & Credits</h3><hr class="notop"></div>
+<p>	Thanks so much to</p>
+<ul>	<li>		<a href="http://jquery.com/">jQuery</a></li>
+	<li>		<a href="http://jqueryui.com/">jQueryUI</a></li>
+	<li>		<a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a></li>
+	<li>		<a href="http://ckeditor.com/">ckEditor</a></li>
+</ul>
+<p>	&nbsp;</p>
+</section>
+<section id="supporters">
+	<div class="page-header"><h3>Supporters</h3><hr class="notop"></div>
+<p>	List of all the kind people who donated:</p>
+<ul>	<li>		<a href="http://themeforest.net/user/DDStudios?ref=revaxarts">DDStudios</a></li>
+	<li>		M. Schinis</li>
+	<li>		<a href="http://codecanyon.net/user/JonasDoebertin?ref=revaxarts">JonasDoebertin</a></li>
+	<li>		<a href="http://themeforest.net/user/hogash?ref=revaxarts">hogash</a></li>
+	<li>		N. Payne</li>
+	<li>		O. Hebel<!--
+</ul-->
+		<p>			If you wan&#39;t to get into this list please <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=paypal%40revaxarts%2ecom&amp;lc=US&amp;item_name=The%20Documenter%20by%20revaxarts&amp;no_note=0&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHostedGuest">donate</a> any amount</p>
+	</li>
+</ul>
+</section>
+<section id="what_else">
+	<div class="page-header"><h3>What else</h3><hr class="notop"></div>
+<p>	I spent a lot of time on this thing. Nevertheless it&#39;s still not finished. I like to improve it wherever I can and appreciate your feedback.</p>
+<p>	Best wishes</p>
+<p>	Xaver Birsak, revaxarts.com</p>
+<p>	<a href="http://themeforest.net/user/revaxarts?ref=revaxarts">http://themeforest.net/user/revaxarts</a></p>
+</section>
+
+
+
+    <hr />
+
+<footer>
+    <p>Copyright Praharsh Bhatt 2020 made with the <a href="https://evp.to/documenter">Documenter v2.0</a></p>
+</footer>
+
+</div><!-- /container -->
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.scrollTo.js"></script>
+<script src="assets/js/jquery.easing.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap-min.js"></script>
+</body>
+</html>
